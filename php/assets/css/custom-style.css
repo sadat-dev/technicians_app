@@ -1,0 +1,31 @@
+#login_submit {
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+#login_submit input[type="submit"]{
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background: #7b1fa2;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.signup-page .wrapper .card-signup {margin-bottom: 130px;}
+
+.alert_bootom_right {
+	display: none; 
+	margin: 0px auto; 
+	position: fixed; 
+	transition: all 0.5s ease-in-out; 
+	z-index: 1031; 
+	bottom: 20px; 
+	right: 20px;
+}

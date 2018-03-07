@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="55"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/working_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_tech"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/call_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_call_blue" />
+
+                <ImageView
+                    android:id="@+id/sms_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_message_yellow" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.mybeats.fixkoro.util.CircularNetworkImageView
+        android:id="@+id/tech_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" />
+
+</FrameLayout>

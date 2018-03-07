@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Fixkoro</string>
+    <string-array name="shipping_areas">
+        <item>Standard Delivery (2-3days): BDT 100</item>
+        <item>Express delivery (1 Day): BDT 250</item>
+        <item>Order over 3000 Taka and get free delivery</item>
+        <item>Standard Delivery (Outside Dhaka): BDT 250</item>
+        <item>Outside Dhaka: Order over BDT 4000 and get free delivery</item>
+    </string-array>
+    <string name="title_activity_tech_profile">TechProfile</string>
+    <string name="action_settings">Settings</string>
+      <string name="visit_us"> \n\n<b>Fixkoro</b>\n\n
+        Shop:12 Block:B Level:3\n
+Bashundhara City Shopping Complex.
+        Dhaka\n\n\
+    </string>
+</resources>

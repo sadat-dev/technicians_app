@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="10dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mybeats.fixkoro.util.CircularNetworkImageView
+                android:id="@+id/tech_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/id_tech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/image_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/working_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+
+                android:textColor="@color/default_text_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/special_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+
+                android:textColor="@color/default_text_color"
+                android:textSize="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_light" />
+
+            <TextView
+                android:id="@+id/view_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/view_profile_btn_back"
+                android:gravity="center"
+                android:text="View profile"
+                android:textColor="@color/dark_gray"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/area_name_back"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="View profile"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/latti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/longi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/share_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="12dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user_blue"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

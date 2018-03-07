@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_offset">5dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="backdrop_title">30dp</dimen>
+    <dimen name="backdrop_subtitle">18dp</dimen>
+
+    <!--card margin is the property to maintain the spacing between cards -->
+    <dimen name="card_margin">1dp</dimen>
+    <dimen name="card_item_radius">0dp</dimen>
+    <dimen name="item_cover_height">160dp</dimen>
+    <dimen name="item_title_padding">10dp</dimen>
+    <dimen name="item_title">15dp</dimen>
+
+    <dimen name="item_price_padding_bottom">5dp</dimen>
+    <dimen name="item_price">12dp</dimen>
+
+    <!--3 dot icons properties-->
+    <dimen name="ic_three_dot_overflow_width">20dp</dimen>
+    <dimen name="ic_three_dot_overflow_height">30dp</dimen>
+    <dimen name="ic_three_dot_overflow_margin_top">10dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

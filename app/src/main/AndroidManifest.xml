@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="musabbir.mybeats.fixkoro">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"></uses-feature>
+
+
+    <application
+        android:name="com.mybeats.fixkoro.util.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDB2gDhU8oZUrPWov1nov1ucchV4ncwtbQ" />
+
+        <activity android:name="com.mybeats.fixkoro.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mybeats.fixkoro.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.mybeats.fixkoro.CartIemsMultiTouch"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name="com.mybeats.fixkoro.CartItemsCard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name="com.mybeats.fixkoro.TechListCard"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name="com.mybeats.fixkoro.Signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.mybeats.fixkoro.PlaceOrder"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.mybeats.fixkoro.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.mybeats.fixkoro.Categories"
+            android:label="Categories"
+            android:parentActivityName="com.mybeats.fixkoro.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="com.mybeats.fixkoro.ForgetPass"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="com.mybeats.fixkoro.Item"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.mybeats.fixkoro.LoginOrSignup"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.mybeats.fixkoro.ItemDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.mybeats.fixkoro.TechList"
+            android:label="Technician list"
+            android:parentActivityName="com.mybeats.fixkoro.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.mybeats.fixkoro.TechProfile"
+            android:label="Technician profile"
+            android:parentActivityName="com.mybeats.fixkoro.TechList"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name="com.mybeats.fixkoro.MyOrders"
+            android:label="My orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name="com.mybeats.fixkoro.OrderedItems"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+
+        </activity>
+
+    </application>
+
+</manifest>
